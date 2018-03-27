@@ -15,4 +15,5 @@ the recursive abtraction can say
   if it is possible to find a path to the treasure from a point next to the start.
 
 ## version *n*
-(wishlist)
+- Print the solutions of the maze
+
