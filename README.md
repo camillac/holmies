@@ -15,5 +15,7 @@ the recursive abtraction can say
   if it is possible to find a path to the treasure from a point next to the start.
 
 ## version *n*
-- Print the solutions of the maze
-
+- Find and return all of the solutions of the maze
+- Find the shortest solution to the maze
+- Pretty toString
+- 
