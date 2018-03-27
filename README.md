@@ -6,7 +6,7 @@ what is the boolean expression of the statement
   "it is possible to make a path from start to treasure"
 
 ## recursive abstraction
-######Version L
+###### Version L
 
 [From Treasure to Player, backwards]
 
@@ -14,7 +14,7 @@ When I'm asked to
 find a path to treasure,
 the recursive abtraction can 
 find a path to a new nearer "treasure", which is a legal spot that is immediately next to the original treasure. 
-######Version C
+###### Version C
 
 [From Player to Treasure, forwards]
 
