@@ -15,14 +15,18 @@ the recursive abtraction can say
   if it is possible to find a path to the treasure from a point next to the start.
 
 ## Base case
-
+A maze/path of size 1 step/space.
 
 ## Pseudocode of algorithm
 
 
 ## Class(es), with fields and methods
-
-
+### Maze
+#### Fields
+- 
+### MazeSolver
+#### Fields
+- 
 ## version *n*
 - Find and return all of the solutions of the maze
 - Find the shortest solution to the maze
