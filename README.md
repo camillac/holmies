@@ -18,15 +18,28 @@ the recursive abtraction can say
 A maze/path of size 1 step/space.
 
 ## Pseudocode of algorithm
+if treasure is right next to location, return true
+else for every spot next to location,
+repeat the problem starting with that new spot
 
 
 ## Class(es), with fields and methods
 ### Maze
 #### Fields
+- int[][] mazeItself (how should the maze be stored?)
+
+#### Methods
+- public boolean isSolvable (?)
+- public Maze
 - 
+
 ### MazeSolver
 #### Fields
-- 
+- Maze m
+
+#### Methods
+- public MazeSolver (
+
 ## version *n*
 - Find and return all of the solutions of the maze
 - Find the shortest solution to the maze
