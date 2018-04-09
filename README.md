@@ -15,10 +15,12 @@ the recursive abtraction can say
   if it is possible to find a path to the treasure from a point next to the start.
 
 ## Base case
-A maze/path of size 1 step/space.
+-When explorer is on treasure
+-When explorer is on a wall
 
 ## Pseudocode of algorithm
-if treasure is right next to location, return true
+If explorer is on treasure, return true
+
 else for every spot next to location,
 repeat the problem starting with that new spot
 
