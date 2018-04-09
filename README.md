@@ -15,8 +15,8 @@ the recursive abtraction can say
   if it is possible to find a path to the treasure from a point next to the start.
 
 ## Base case
--When explorer is on treasure
--When explorer is on a wall
+- When explorer is on treasure
+- When explorer is on a wall
 
 ## Pseudocode of algorithm
 If (explorer is on treasure), 
