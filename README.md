@@ -33,9 +33,9 @@ for every spot next to location,
 
 move explorer to the new spot
 
-if (new spot is not a WALL)
+if (new spot is not a WALL) //check current spot
 
-and repeat the problem starting with that new spot
+repeat the problem starting with that new spot
 
 
 
