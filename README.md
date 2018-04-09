@@ -19,9 +19,13 @@ the recursive abtraction can say
 -When explorer is on a wall
 
 ## Pseudocode of algorithm
-If explorer is on treasure, return true
+If (explorer is on treasure), 
 
-else for every spot next to location,
+return true
+
+else 
+
+for every spot next to location,
 repeat the problem starting with that new spot
 
 
