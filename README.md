@@ -31,9 +31,11 @@ else
 
 for every spot next to location,
 
+move explorer to the new spot
+
 if (new spot is not a WALL)
 
-move explorer to the new spot and repeat the problem starting with that new spot
+and repeat the problem starting with that new spot
 
 
 
