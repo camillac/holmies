@@ -23,16 +23,28 @@ If (explorer is on treasure),
 
 return true
 
+If(explorer is on wall),
+
+return false
+
 else 
 
 for every spot next to location,
-repeat the problem starting with that new spot
+
+if (new spot is not a WALL)
+
+move explorer to the new spot and repeat the problem starting with that new spot
+
 
 
 ## Class(es), with fields and methods
 ### Maze
 #### Fields
-- int[][] mazeItself (how should the maze be stored?)
+- int[][] maze
+- representation of treasure
+- representation of wall
+- representation of stepping stone
+- rep of directions
 
 #### Methods
 - public boolean isSolvable (?)
