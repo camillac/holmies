@@ -10,9 +10,12 @@ what is the boolean value of the statement
 
 ## recursive abstraction
 When I'm asked
+
   if it is possible to find a path to the treasure,
+  
 the recursive abtraction can say
-  if it is possible to find a path to the treasure from a point next to the start.
+
+  if it is possible to find a path to the treasure from a point next to the the explorer's location at the beginning of a particular execution of the recursive procedure.
 
 ## Base case
 - When explorer is on treasure
