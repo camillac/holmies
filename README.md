@@ -18,8 +18,8 @@ the recursive abtraction can say
   if it is possible to find a path to the treasure from a point next to the the explorer's current location
 
 ## Base case
-- When explorer is on treasure
-- When explorer is on a wall
+- When explorer is on treasure, return true
+- When explorer is on a wall, return false
 
 ## Pseudocode of algorithm
     if (explorer is on treasure), 
@@ -30,7 +30,12 @@ the recursive abtraction can say
         for every spot next to location {
             drop a wall on current location
             move explorer to the new spot
-            RECURSIVE ABSTRACTION: repeat the problem starting with that new spot
+            if ([RECURSIVE ABSTRACTION: repeat the problem starting with that new spot] returns false) {
+                //do nothing??
+            }
+            else {
+                return true;
+            }
         }
         return false
     }
@@ -55,7 +60,8 @@ the recursive abtraction can say
 - Maze m
 
 #### Methods
-- public MazeSolver (
+- public MazeSolver 
+
 
 ## version *n*
 - Find and return all of the solutions of the maze
