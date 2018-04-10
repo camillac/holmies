@@ -23,23 +23,17 @@ the recursive abtraction can say
 
 ## Pseudocode of algorithm
     if (explorer is on treasure), 
-
         return true
-
     if (explorer is on wall),
-
         return false
-
-    else 
-
-        for every spot next to location,
-
+    else {
+        for every spot next to location {
+            drop a wall on current location
             move explorer to the new spot
-
-            if (explorer is not on a WALL) //check current spot
-
-                repeat the problem starting with that new spot
-
+            RECURSIVE ABSTRACTION: repeat the problem starting with that new spot
+        }
+        return false
+    }
 
 
 ## Class(es), with fields and methods
