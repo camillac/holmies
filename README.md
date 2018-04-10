@@ -6,7 +6,7 @@ Camilla Cheng & Lisa Ye
 
 ## statement of problem
 what is the boolean value of the statement
-  "it is possible to make a path from start to treasure"?
+  "it is possible to make a path from explorer's current position to treasure"?
 
 ## recursive abstraction
 When I'm asked
@@ -15,7 +15,7 @@ When I'm asked
   
 the recursive abtraction can say
 
-  if it is possible to find a path to the treasure from a point next to the the explorer's location at the beginning of a particular execution of the recursive procedure.
+  if it is possible to find a path to the treasure from a point next to the the explorer's current location
 
 ## Base case
 - When explorer is on treasure
