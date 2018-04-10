@@ -30,10 +30,7 @@ the recursive abtraction can say
         for every spot next to location {
             drop a wall on current location
             move explorer to the new spot
-            if ([RECURSIVE ABSTRACTION: repeat the problem starting with that new spot] returns false) {
-                //do nothing??
-            }
-            else {
+            if ( [RECURSIVE ABSTRACTION: repeat the problem starting with that new spot] {
                 return true;
             }
         }
