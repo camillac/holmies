@@ -12,28 +12,30 @@ what is the boolean value of the statement
 When I'm asked
   if it is possible to find a path to the treasure,
 the recursive abtraction can say
-  if it is possible to find a path to the treasure from a point next to the the explorer's location at the beginning of a particular execution of the recursive procedure.
+  if it is possible to find a path to the treasure from a point next to the start.
 
 ## Base case
-- When explorer is on treasure, return true
-- When explorer is on a wall, return false
+- When explorer is on treasure
+- When explorer is on a wall
 
 ## Pseudocode of algorithm
-If (explorer is on treasure), 
+    if (explorer is on treasure), 
 
-return true
+        return true
 
-If(explorer is on wall),
+    If(explorer is on wall),
 
-return false
+        return false
 
-else 
+    else 
 
-for every spot next to location,
+        for every spot next to location,
 
-move explorer to the new spot
+            move explorer to the new spot
 
-repeat the problem starting with that new spot
+            if (new spot is not a WALL) //check current spot
+
+                repeat the problem starting with that new spot
 
 
 
