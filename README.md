@@ -21,21 +21,21 @@ the recursive abtraction can say
 ## Pseudocode of algorithm
 If (explorer is on treasure), 
 
-return true
+    return true
 
 If(explorer is on wall),
 
-return false
+    return false
 
 else 
 
-for every spot next to location,
+    for every spot next to location,
 
-move explorer to the new spot
+        move explorer to the new spot
 
-if (new spot is not a WALL) //check current spot
+        if (new spot is not a WALL) //check current spot
 
-repeat the problem starting with that new spot
+            repeat the problem starting with that new spot
 
 
 
