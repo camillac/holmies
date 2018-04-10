@@ -1,26 +1,66 @@
 # holmies
 mazeSolver project
 
+## personnel
+Camilla Cheng & Lisa Ye
+
 ## statement of problem
-what is the boolean expression of the statement
-  "it is possible to make a path from start to treasure"
+what is the boolean value of the statement
+  "it is possible to make a path from start to treasure"?
 
 ## recursive abstraction
-###### Version L
+When I'm asked
+  if it is possible to find a path to the treasure,
+the recursive abtraction can say
+  if it is possible to find a path to the treasure from a point next to the start.
 
-[From Treasure to Player, backwards]
+## Base case
+- When explorer is on treasure
+- When explorer is on a wall
 
-When I'm asked to 
-find a path to treasure,
-the recursive abtraction can 
-find a path to a new nearer "treasure", which is a legal spot that is immediately next to the original treasure. 
-###### Version C
+## Pseudocode of algorithm
+If (explorer is on treasure), 
 
-[From Player to Treasure, forwards]
+return true
 
-When I am asked for the solution(s) of a maze,
-and I am n steps into the maze,
-the recursive abstraction can find the n+1 step, and the
-rest until I reach the end of the maze.
+If(explorer is on wall),
 
-Will pick one/combine later after discussion in person
+return false
+
+else 
+
+for every spot next to location,
+
+move explorer to the new spot
+
+if (new spot is not a WALL) //check current spot
+
+repeat the problem starting with that new spot
+
+
+
+## Class(es), with fields and methods
+### Maze
+#### Fields
+- int[][] maze
+- representation of treasure
+- representation of wall
+- representation of stepping stone
+- rep of directions
+
+#### Methods
+- public boolean isSolvable (?)
+- public Maze
+- 
+
+### MazeSolver
+#### Fields
+- Maze m
+
+#### Methods
+- public MazeSolver (
+
+## version *n*
+- Find and return all of the solutions of the maze
+- Find the shortest solution to the maze
+- Pretty toString
