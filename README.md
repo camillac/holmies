@@ -9,13 +9,12 @@ what is the boolean value of the statement
   "it is possible to make a path from explorer's current position to treasure"?
 
 ## recursive abstraction
+<pre>
 When I'm asked
-
-  if it is possible to find a path to the treasure,
-  
+    if it is possible to find a path to the treasure,
 the recursive abtraction can say
-
-  if it is possible to find a path to the treasure from a point next to the the explorer's current location
+    if it is possible to find a path to the treasure from a point next to the the explorer's current location
+</pre>
 
 ## Base case
 - When explorer is on treasure, return true
@@ -31,7 +30,7 @@ the recursive abtraction can say
         for each stepping stone in all four directions of the current position {
             drop a wall on current location;
             move explorer to the new spot;
-            if ( [RECURSIVE ABSTRACTION: repeat the problem starting with that new spot] {
+            if ( [RECURSIVE ABSTRACTION: repeat the problem starting with that new spot] ) {
                 return true;
             }
             else {
