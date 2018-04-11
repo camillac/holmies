@@ -28,7 +28,7 @@ the recursive abtraction can say
         return false
     else {
         take a snapshot of maze;
-        for every spot next to location {
+        for each stepping stone in all four directions of the current position {
             drop a wall on current location;
             move explorer to the new spot;
             if ( [RECURSIVE ABSTRACTION: repeat the problem starting with that new spot] {
