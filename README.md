@@ -1,14 +1,16 @@
 # holmies
 mazeSolver project
 
-## personnel
+### personnel
 Camilla Cheng & Lisa Ye
 
-## statement of problem
+---
+# Maze Solver
+## Statement of problem
 What is the boolean value of the statement
   "it is possible to make a path from explorer's current position to treasure"?
 
-## recursive abstraction
+## Recursive abstraction
 <pre>
 When I'm asked
     if it is possible to find a path to the treasure,
@@ -48,22 +50,24 @@ the recursive abtraction can say
 - representation of treasure
 - representation of wall
 - representation of stepping stone
-- rep of directions
+- rep of directions [N,E,S,W]
 
 #### Methods
 - public Maze
 - public go(direction)
 - public explorerIsOnA(location)
+- public toString
 
-### MazeSolver
+
+### UserOfMaze
 #### Fields
 - Maze m
 
 #### Methods
-- public MazeSolver 
+- public static void main(String[] args)
 
 
 ## version *n*
 - Find and return all of the solutions of the maze
 - Find the shortest solution to the maze
-- Pretty toString
+- Build a nice visual of the maze
