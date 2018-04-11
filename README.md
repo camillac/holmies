@@ -42,6 +42,7 @@ the recursive abtraction can say
         return false;
     }
 
+---
 
 ## Class(es), with fields and methods
 ### Maze
@@ -58,7 +59,6 @@ the recursive abtraction can say
 - public explorerIsOnA(location)
 - public toString
 
-
 ### UserOfMaze
 #### Fields
 - Maze m
@@ -66,8 +66,11 @@ the recursive abtraction can say
 #### Methods
 - public static void main(String[] args)
 
+---
 
-## version *n*
+## Known Bugs
+
+## Version *n*
 - Find and return all of the solutions of the maze
 - Find the shortest solution to the maze
 - Build a nice visual of the maze
