@@ -27,11 +27,15 @@ the recursive abtraction can say
     if (explorer is on wall),
         return false
     else {
+        take a snapshot of maze;
         for every spot next to location {
-            drop a wall on current location
-            move explorer to the new spot
+            drop a wall on current location;
+            move explorer to the new spot;
             if ( [RECURSIVE ABSTRACTION: repeat the problem starting with that new spot] {
                 return true;
+            }
+            else {
+                set current maze to snapshot;
             }
         }
         return false
