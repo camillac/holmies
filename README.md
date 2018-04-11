@@ -5,7 +5,7 @@ mazeSolver project
 Camilla Cheng & Lisa Ye
 
 ## statement of problem
-what is the boolean value of the statement
+What is the boolean value of the statement
   "it is possible to make a path from explorer's current position to treasure"?
 
 ## recursive abstraction
@@ -21,23 +21,23 @@ the recursive abtraction can say
 - When explorer is on a wall, return false
 
 ## Pseudocode of algorithm
-    if (explorer is on treasure), 
-        return true
-    if (explorer is on wall),
-        return false
+    if (explorer is on treasure)
+        return true;
+    if (explorer is on wall)
+        return false;
     else {
-        take a snapshot of maze;
-        for each stepping stone in all four directions of the current position {
+        take a snapshot of maze; // saves image of maze before the explorer moves to a new spot
+        for ( each spot in all four directions [N,E,S,W] next to the current position ) {
             drop a wall on current location;
-            move explorer to the new spot;
+            move explorer to the new spot (in the direction mentioned in the for loop);
             if ( [RECURSIVE ABSTRACTION: repeat the problem starting with that new spot] ) {
                 return true;
             }
             else {
-                set current maze to snapshot;
+                set current maze to snapshot; // reset the image of the maze to before the explorer moved
             }
         }
-        return false
+        return false;
     }
 
 
@@ -51,9 +51,9 @@ the recursive abtraction can say
 - rep of directions
 
 #### Methods
-- public boolean isSolvable (?)
 - public Maze
-- 
+- public go(direction)
+- public explorerIsOnA(location)
 
 ### MazeSolver
 #### Fields
