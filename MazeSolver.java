@@ -29,6 +29,7 @@ public class MazeSolver {
           return true;
         else
           maze = snapshot;
+          System.out.println(maze);
       } // end of for loop
       return false;
     }
