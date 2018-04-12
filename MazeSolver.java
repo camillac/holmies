@@ -7,6 +7,8 @@ public class MazeSolver {
   
   public static boolean mazeSolver( Maze maze ) {
     
+    System.out.println( maze + System.lineSeparator());
+    
     // base case 0
     if (maze.explorerIsOnA() == Maze.TREASURE)
       return true;
