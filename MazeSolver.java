@@ -5,14 +5,14 @@
 
 public class MazeSolver {
   
-  public boolean mSolver( Maze maze ) {
+  public boolean mazeSolver( Maze maze ) {
     
     // base case 0
-    if (maze.explorerIsOnA() == maze.TREASURE)
+    if (maze.explorerIsOnA() == Maze.TREASURE)
       return true;
     
     // base case 1
-    if (maze.explorerIsOnA() == maze.WALL )
+    if (maze.explorerIsOnA() == Maze.WALL )
       return false;
     
     // recursive case
@@ -21,9 +21,9 @@ public class MazeSolver {
       Maze snapshot = new Maze(maze);
       
       for (int dir = 0; dir < 4; dir++) {
-        maze.dropA( maze.WALL );
+        maze.dropA( Maze.WALL );
         go( Math.pow(2, dir) );
-        if ( mSolver(maze) ) // if the recursive abstraction returns true
+        if ( mazeSolver( maze ) ) // if the recursive abstraction returns true
           return true;
         else
           maze = snapshot;
