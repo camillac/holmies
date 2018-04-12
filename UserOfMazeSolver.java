@@ -8,7 +8,7 @@
   o  the rank and file where an explorer is starting
 
   For example,
-      java UserOfMaze mazes/4cell_treasureWest.txt -1 -1  # no explorer
+      java UserOfMazeSolver mazes/4cell_treasureWest.txt -1 -1  # no explorer
  */
 
 public class UserOfMazeSolver {
