@@ -21,6 +21,7 @@ public class MazeSolver {
     else {
       
       Maze snapshot = new Maze(maze);
+      System.out.println("Snapshot taken:" + System.lineSeparator() + snapshot);
       
       for (int dir = 0; dir < 4; dir++) {
         maze.dropA( Maze.WALL );
@@ -28,8 +29,9 @@ public class MazeSolver {
         if ( mazeSolver( maze ) ) // if the recursive abstraction returns true
           return true;
         else
+          System.out.println("Before restoration:" + System.lineSeparator() + maze);
           maze = snapshot;
-          System.out.println(maze);
+          System.out.println("After restoration:" + System.lineSeparator() + maze);
       } // end of for loop
       return false;
     }
