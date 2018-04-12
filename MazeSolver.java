@@ -5,7 +5,7 @@
 
 public class MazeSolver {
   
-  public boolean mazeSolver( Maze maze ) {
+  public static boolean mazeSolver( Maze maze ) {
     
     // base case 0
     if (maze.explorerIsOnA() == Maze.TREASURE)
@@ -22,7 +22,7 @@ public class MazeSolver {
       
       for (int dir = 0; dir < 4; dir++) {
         maze.dropA( Maze.WALL );
-        go( Math.pow(2, dir) );
+        Maze.go( Math.pow(2, dir) );
         if ( mazeSolver( maze ) ) // if the recursive abstraction returns true
           return true;
         else
