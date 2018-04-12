@@ -22,7 +22,7 @@ public class MazeSolver {
       
       for (int dir = 0; dir < 4; dir++) {
         maze.dropA( Maze.WALL );
-        Maze.go( (int) Math.pow(2, dir) );
+        maze.go( (int) Math.pow(2, dir) );
         if ( mazeSolver( maze ) ) // if the recursive abstraction returns true
           return true;
         else
