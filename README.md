@@ -69,9 +69,9 @@ the recursive abtraction can say
 ---
 
 ## Known Bugs/Issues
-- nullPointer error when testing on big maze(1 rank, 3 files)
-- Snapshot is being replaced on every recursive call
-- Need to change parameter in for loop
+- ~~nullPointer error when testing on big maze(1 rank, 3 files)~~
+- ~~Snapshot is being replaced on every recursive call~~
+- ~~Need to change parameter in for loop~~
 
 ## Version *n*
 - Find and return all of the solutions of the maze
