@@ -9,7 +9,6 @@ public class MazeSolver {
 										 , Maze.NORTH
 										 , Maze.WEST
 										 , Maze.SOUTH };
-	
   
   public static boolean mazeSolver( Maze maze ) {
     
@@ -27,21 +26,25 @@ public class MazeSolver {
     else {
       
       Maze snapshot = new Maze(maze);
-      System.out.println("Snapshot taken:" + System.lineSeparator() + snapshot);
+      debug("Snapshot taken:", snapshot);
       
-      for (int dir = 0; dir < 4; dir++) {
+      for (int dir = 3; dir > -1; dir--) {
         maze.dropA( Maze.WALL );
         maze.go( directions[dir] );
         if ( mazeSolver( maze ) ) // if the recursive abstraction returns true
           return true;
         else
-          System.out.println("Before restoration:" + System.lineSeparator() + maze);
+          debug("Before restoration:" + dir, maze);
           maze = snapshot;
-          System.out.println("After restoration:" + System.lineSeparator() + maze);
+          debug("After restoration:" + dir, maze);
       } // end of for loop
       return false;
     }
     
+  }
+  
+  public static void debug(String s, Maze m) {
+	  System.out.println(s + System.lineSeparator() + m);
   }
   
 }
