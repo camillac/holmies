@@ -25,9 +25,9 @@ public class MazeSolver {
     // recursive case
     else {
       
-      
+      Maze snapshot = new Maze(maze);
       for (int dir = 0; dir < 4; dir++) {
-		Maze snapshot = new Maze(maze);
+		
 		debug("Snapshot taken:", snapshot);
         maze.dropA( Maze.WALL );
         maze.go( directions[dir] );
@@ -35,7 +35,7 @@ public class MazeSolver {
           return true;
         else
           debug("Before restoration:" + dir, maze);
-          maze = snapshot;
+          maze = new Maze(snapshot);
           debug("After restoration:" + dir, maze);
       } // end of for loop
       return false;
