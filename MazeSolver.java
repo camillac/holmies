@@ -4,6 +4,12 @@
  */
 
 public class MazeSolver {
+	
+  public final static int directions[] = { Maze.EAST
+										 , Maze.NORTH
+										 , Maze.WEST
+										 , Maze.SOUTH };
+	
   
   public static boolean mazeSolver( Maze maze ) {
     
@@ -25,7 +31,7 @@ public class MazeSolver {
       
       for (int dir = 0; dir < 4; dir++) {
         maze.dropA( Maze.WALL );
-        maze.go( (int) Math.pow(2, dir) );
+        maze.go( directions[dir] );
         if ( mazeSolver( maze ) ) // if the recursive abstraction returns true
           return true;
         else
