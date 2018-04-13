@@ -26,7 +26,7 @@ public class MazeSolver {
     else {
       
       
-      for (int dir = 3; dir > -1; dir--) {
+      for (int dir = 0; dir < 4; dir++) {
 		Maze snapshot = new Maze(maze);
 		debug("Snapshot taken:", snapshot);
         maze.dropA( Maze.WALL );
