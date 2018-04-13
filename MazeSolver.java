@@ -25,10 +25,10 @@ public class MazeSolver {
     // recursive case
     else {
       
-      Maze snapshot = new Maze(maze);
-      debug("Snapshot taken:", snapshot);
       
       for (int dir = 3; dir > -1; dir--) {
+		Maze snapshot = new Maze(maze);
+		debug("Snapshot taken:", snapshot);
         maze.dropA( Maze.WALL );
         maze.go( directions[dir] );
         if ( mazeSolver( maze ) ) // if the recursive abstraction returns true
