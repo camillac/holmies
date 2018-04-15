@@ -81,3 +81,4 @@ the recursive abtraction can say
 ## v1
 - Make code easy to read
 - ~~Implement Displayer~~
+- Print out number of steps explorer took if treasure is possible to get to.
