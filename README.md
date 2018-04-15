@@ -77,3 +77,7 @@ the recursive abtraction can say
 - Find and return all of the solutions of the maze
 - Find the shortest solution to the maze
 - Build a nice visual of the maze
+
+## v1
+- Make code easy to read
+- Implement Displayer
