@@ -81,4 +81,5 @@ the recursive abtraction can say
 ## v1
 - Make code easy to read
 - ~~Implement Displayer~~
-- Print out number of steps explorer took if treasure is possible to get to.
+- Print out number of steps as explorer moves along the maze.
+- Print out the direction explorer chooses to go.
