@@ -8,11 +8,17 @@ public class MazeSolver {
   public final static int directions[] = { Maze.EAST
 										 , Maze.NORTH
 										 , Maze.WEST
-										 , Maze.SOUTH };
+                     , Maze.SOUTH };
+                     
+  private static int steps;
   
   public static boolean mazeSolver( Maze maze ) {
     
-    System.out.println("Explorer has moved:" + System.lineSeparator() + maze );
+    System.out.println("Explorer has moved:" 
+                        + System.lineSeparator() 
+                        + maze 
+                        + "Steps taken:" 
+                        + steps++);
     
     // base case 0: on treasure
     if (maze.explorerIsOnA() == Maze.TREASURE)
