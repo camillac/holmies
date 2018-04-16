@@ -78,8 +78,8 @@ the recursive abtraction can say
 - Find the shortest solution to the maze
 - Build a nice visual of the maze
 
-## v1
+## What's new in v1
 - Make code easy to read
-- ~~Implement Displayer~~
+- ~~Implement Displayer~~ [cancelled]
 - Print out number of steps as explorer moves along the maze.
 - Print out the direction explorer chooses to go.
