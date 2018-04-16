@@ -5,46 +5,50 @@
 
 public class MazeSolver {
 	
-  public final static int directions[] = { Maze.EAST
+  public final static int[] directions = { Maze.EAST
 										 , Maze.NORTH
 										 , Maze.WEST
-                     , Maze.SOUTH };
-                     
+										 , Maze.SOUTH };
+										 
+  public final static String[] turnString = { "EAST"
+											, "NORTH"
+											, "WEST"
+											, "SOUTH" };
   private static int steps;
   
   public static boolean mazeSolver( Maze maze ) {
     
-    System.out.println("Explorer has moved:" 
-                        + System.lineSeparator() 
-                        + maze 
-                        + "Steps taken:" 
-                        + steps++);
-    
     // base case 0: on treasure
-    if (maze.explorerIsOnA() == Maze.TREASURE)
+    if (maze.explorerIsOnA() == Maze.TREASURE) {
+      System.out.println(maze);
       return true;
+	}
     
     // base case 1: on a wall
-    if (maze.explorerIsOnA() == Maze.WALL )
+    if (maze.explorerIsOnA() == Maze.WALL ) {
       return false;
-    
+    }
+	
     // recursive case
     else {
       //takes a snapshot
       Maze snapshot = new Maze(maze);
+	  System.out.println(maze);
       for (int dir = 0; dir < 4; dir++) {
-                // debug("Snapshot taken:", snapshot);
+        // debug("Snapshot taken:", snapshot);
         //drops a wall in current position
         maze.dropA( Maze.WALL );
         //moves toward a direction
         maze.go( directions[dir] );
-        if ( mazeSolver( maze ) ) // if the recursive abstraction returns true
+        if ( mazeSolver( maze ) ) { // if the recursive abstraction returns true
+		  System.out.println("Step " + steps++ + ": Turn " + turnString[dir]);// Print out the step + direction
           return true; 
+		  }
         else 
-                // debug("Before restoration:" + dir, maze);
+          // debug("Before restoration:" + dir, maze);
           //restores the maze to snapshot
           maze = new Maze(snapshot);
-                // debug("After restoration:" + dir, maze);
+          // debug("After restoration:" + dir, maze);
       } // end of for loop
       return false;
     }

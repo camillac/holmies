@@ -19,7 +19,7 @@ public class UserOfMazeSolver {
                              , Integer.parseInt( commandLine[1])
                              , Integer.parseInt( commandLine[2])
                              );
-    System.out.println( MazeSolver.mazeSolver( testMaze0 ) );
+    System.out.println(MazeSolver.mazeSolver( testMaze0 ));
   }
 }
   
