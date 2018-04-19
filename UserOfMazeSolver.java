@@ -13,7 +13,7 @@
 
 public class UserOfMazeSolver {
   
-  public static void main (String[] commandLine) 
+  public static void main (String[] commandLine) {
   try { //tests if it is possible to make maze with given strings in the command line
     Maze testMaze0 = new Maze( commandLine[0]
                              , Integer.parseInt( commandLine[1])
@@ -28,6 +28,7 @@ public class UserOfMazeSolver {
                        + System.lineSeparator());
   }
     System.out.println( MazeSolver.mazeSolver( testMaze0 ) );
+  }
 }
   
 // not sure if we need any more methods that were used in UserOfMaze since they were all test methods
