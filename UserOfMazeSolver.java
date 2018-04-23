@@ -13,21 +13,12 @@
 
 public class UserOfMazeSolver {
   
-  public static void main (String[] commandLine) {
-    try {
+  public static void main (String[] commandLine)
+    throws java.io.FileNotFoundException {
       Maze testMaze0 = new Maze( commandLine[0]
                                , Integer.parseInt( commandLine[1])
                                , Integer.parseInt( commandLine[2])
                                );
-    } catch (java.io.FileNotFoundException unusedID ) {
-    
-        Maze testMaze0 = new Maze( commandLine[0]
-                                 , Integer.parseInt( commandLine[1])
-                                 , Integer.parseInt( commandLine[2])
-                                 );
-      System.out.println("Maze File Not Found: Will Use Default Maze: "
-                         + System.lineSeparator());
-    }
       System.out.println(MazeSolver.mazeSolver( testMaze0 ));
   }
 }
