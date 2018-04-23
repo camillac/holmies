@@ -42,6 +42,7 @@ public class Maze {
     public Maze( String sourceFilename
                , int explorerRank, int explorerFile
                ) throws java.io.FileNotFoundException {
+	//{
 
         /* Construct the maze array one rank at a time, in case
            we ever allow non-rectangular mazes  */
